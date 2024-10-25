@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .otp-form {
+          width: 400px;
+          height: 400px;
+          margin: 1rem auto;
+        }
+  
+        .input-group {
+          width: 100%;
+        }
+  
+        .input-group label {
+          display: block;
+        }
+  
+        .input-group input {
+          width: 100%;
+        }
+  
+        button {
+          padding: 10px 17px;
+          margin-top: 1rem;
+          font-size: 1rem;
+          background: #eee;
+          border: 1px solid #333;
+          cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="otp-form">
+        <h3>OTP verification page</h3>
+        <form action="/user_verification" method="post">
+            <div class="input-group">
+                <label for="otp">Enter the otp received on your email:</label>
+                <input type="text" name="otp" required id="otp"/>
+            </div>
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+</html>
